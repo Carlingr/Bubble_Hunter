@@ -43,8 +43,6 @@ function setup() {
   if (bubmax < 24) {
     bubmax = 24
   }
-  console.log(bubmin)
-  console.log(bubmax)
   angleMode(DEGREES) //make my head hurt less
 }
 
