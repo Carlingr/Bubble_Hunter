@@ -36,13 +36,15 @@ function setup() {
   lvl = 0
   mode = "game" //"game" gets played, "end" shows scores
   bubmin = width * height / 15000; //based on size of window
-  if (bubmin < 24) {
-    bubmin = 10
+  if (bubmin < 15) {
+    bubmin = 15
   }
   bubmax = width * height / 10000; //based on size of window
   if (bubmax < 24) {
     bubmax = 24
   }
+  console.log(bubmin)
+  console.log(bubmax)
   angleMode(DEGREES) //make my head hurt less
 }
 
@@ -84,7 +86,7 @@ function draw() {
   } else if (mode == "end") { //if looking at scores
     //<make the info P>
     var Pconts = "Score = "
-    Pconts += round(score);
+    Pconts += round(score / 10);
     //</make the info P>
     //<mess with DOM>
     infoP.html(Pconts)
