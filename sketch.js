@@ -11,7 +11,7 @@ var rtop //top of water at bottom
 
 //<DOM variables>
 var canvas;
-var head
+var head;
 var infoP;
 var button;
 //</DOM variables>
@@ -19,14 +19,18 @@ var button;
 function setup() {
   //<mess w/ DOM>
   if (windowWidth < 500) { //the game is too hard to play if the canvas is giant
-    canvas = createCanvas(windowWidth, windowHeight - 15); //make a small canvas
+    canvas = createCanvas(windowWidth, windowHeight * .8); //make a small canvas
   } else { // if the window is biiger then 500
-    canvas = createCanvas(500, windowHeight - 15) //make a big canvas
+    canvas = createCanvas(500, windowHeight * .8) //make a big canvas
   }
   head = createElement("h2", "Game Over")
   infoP = createP();
   button = createButton("Play Again");
-  button.mousePressed(newGame)
+  button.mousePressed(newGame);
+  canvas.parent('game');
+  head.parent('game');
+  infoP.parent('game');
+  button.parent('game');
   head.hide()
   button.hide()
   infoP.hide();
@@ -76,7 +80,7 @@ function draw() {
     //<put the amount of water at the upper left corner of the water>
     stroke("white")
     fill("white")
-    text(abs(round(((rtop / height) * 100) - 100)), 5, rtop + 22);
+    text(abs(round(((rtop / height) * 100) - 100)) + "%", 5, rtop + 22);
     //</put the amount of water at the upper left corner of the water>
     if (rtop <= 0) { //if the water has filled the screen
       mode = "end" //end the game

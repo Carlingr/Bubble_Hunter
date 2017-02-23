@@ -1,19 +1,24 @@
 body {
   text-align: center;
-  background-color: blue;
-  color: white;
+  color: blue;
+  background-color: lightskyblue;
   margin: auto;
 }
 
 canvas {
   border: 1pt solid black;
   text-align: CENTER;
+  margin: auto;
 }
 
 a {
-  color: white;
+  color: blue;
 }
 
 article {
-  background-color: blue;
+  background-color: lightskyblue;
+}
+
+button {
+  margin: auto;
 }
