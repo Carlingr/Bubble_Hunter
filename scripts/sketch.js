@@ -27,10 +27,12 @@ function setup() {
   infoP = createP();
   button = createButton("Play Again");
   button.mousePressed(newGame);
+  //<put the DOM in their place>
   canvas.parent('game');
   head.parent('game');
   infoP.parent('game');
   button.parent('game');
+  //</put the DOM in their place>
   head.hide()
   button.hide()
   infoP.hide();
