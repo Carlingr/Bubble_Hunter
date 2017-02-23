@@ -54,7 +54,7 @@ function draw() {
   rtop = height - (vol / (width / 50)) //
   if (mode == "game") { // if playing a game
     //<make the background and the bottom>
-    background("lightskyblue");
+    background('#bce9ff');
     fill("blue");
     stroke("blue");
     rect(0, rtop, width, height);

@@ -1,7 +1,7 @@
 body {
   text-align: center;
   color: blue;
-  background-color: lightskyblue;
+  background-color: #bce9ff;
   margin: auto;
 }
 
@@ -16,7 +16,7 @@ a {
 }
 
 article {
-  background-color: lightskyblue;
+  background-color: #bce9ff;
 }
 
 button {
