@@ -5,6 +5,18 @@ body {
   margin: auto;
 }
 
+h1 {
+  margin: 6px;
+}
+
+.subt {
+  margin: auto;
+  color: blue;
+  text-decoration: none;
+  font-family: "Roboto Monospace", "Courier New", monospace;
+  font-size: 12px;
+}
+
 canvas {
   border: 1pt solid black;
   text-align: CENTER;
